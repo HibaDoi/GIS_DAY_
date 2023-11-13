@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with LeadMark landing page.">
+    <meta name="author" content="Devcrud">
+    <title>GEOPORTAIL</title>
+    <!-- font icons -->
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+    <!-- Bootstrap + LeadMark main styles -->
+	<link rel="stylesheet" href="assets/css/leadmark.css">
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+
+    <!-- page Navigation -->
+    <nav class="navbar custom-navbar navbar-expand-md navbar-light fixed-top" data-spy="affix" data-offset-top="10">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="assets/imgs/logo.svg" alt="">
+            </a>
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#service">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Carte</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">A propos de nous</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End Of Second Navigation -->
+    <!-- Page Header -->
+    <header class="header">
+        <div class="overlay">
+
+            <h1 class="title">GEOPORTAIL</h1>
+            <h1 class="subtitle">walkability index : L.A City</h1>
+        </div>
+        <div class="shape">
+            <svg viewBox="0 0 1500 200">
+                <path d="m 0,240 h 1500.4828 v -71.92164 c 0,0 -286.2763,-81.79324 -743.19024,-81.79324 C 300.37862,86.28512 0,168.07836 0,168.07836 Z" />
+            </svg>
+        </div>
+        <div class="mouse-icon"><div class="wheel"></div></div>
+    </header>
+    <!-- End Of Page Header -->
+    <!-- Accueil Section -->
+    <section id="service" class="section pt-0">
+        <div class="container">
+            <h6 class="section-title text-center">Accueil</h6>
+
+
+
+            <!-- About Section -->
+            <section class="section" id="Accueil">
+                <div class="container">
+                    <div class="row justify-content-between">
+                        <div class="col-md-6 pr-md-5 mb-4 mb-md-0">
+                            <h6 class="section-title mb-0">context</h6>
+                            <p>"Walkability" refers to how easily people can
+                                walk in a given area, like a neighborhood or city.
+                                It includes factors like the proximity of
+                                destinations, the presence of sidewalks,
+                                pedestrian safety, and other elements that
+                                either facilitate or hinder walking as a mode of
+                                transportation</p>
+                            <img src="assets/imgs/carte.png" alt="" class="w-100 mt-3 shadow-sm">
+                        </div>
+                        <div class="col-md-6 pl-md-5">
+                            <div class="row">
+                                <div class="col-6">
+                                    <img src="assets/imgs/1.jpg" alt="" class="w-100 shadow-sm">
+                                </div>
+                                <div class="col-6">
+                                    <img src="assets/imgs/asilah.jpg" alt="" class="w-100 shadow-sm">
+                                </div>
+                                <div class="col-12 mt-4">
+                                    <p>->  A map allows for a quick and intuitive
+                                        visual representation of areas with high or low walkability.
+                                        This offers an immediate visual understanding of
+                                        pedestrian friendliness in a given region.
+                                        </p>
+                                    <p>->  Walkability
+                                        index maps highlight specific features contributing to
+                                        pedestrian friendliness, such as population density,
+                                        diversity, connectivity, proximity, etc. This helps identify
+                                        strengths and weaknesses in different areas.
+                                        .</p>
+                                    <p>-> Local authorities, urban
+                                        planners, and policymakers can use these maps to make
+                                        informed decisions on urban planning. They can pinpoint
+                                        areas that require pedestrian improvements and design
+                                        policies to promote walkability.
+                                        </p>
+
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End OF About Section -->
+
+
+
+
+
+        </div>
+    </section>
+    <!-- End OF Accueil Section -->
+
+
+    <!-- Carte section  -->
+    <section id="portfolio" class="section portfolio-section">
+        <div class="container">
+            <h6 class="section-title text-center">Géoportail</h6>
+
+            <!DOCTYPE html>
+            <html lang="en">
+            <head>
+                <base target="_top">
+                <meta charset="utf-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+                <title>Quick Start - Leaflet</title>
+                <link rel="shortcut icon" type="image/x-icon" href="docs/images/favicon.ico" />
+                <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css" />
+                <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
+                <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css" integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14=" crossorigin="" />
+                <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js" integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg=" crossorigin=""></script>
+
+
+                <!--Mapbox-->
+
+                <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.js"></script>
+                <link href="https://api.tiles.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.css"
+                      rel="stylesheet" />
+                <script src="https://api.mapbox.com/mapbox.js/plugins/turf/v3.0.11/turf.min.js"></script>
+
+                <!-- OSM buildings-->
+                <link href="https://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" rel="stylesheet" />
+                <script src="https://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+                <script src="https://cdn.osmbuildings.org/classic/0.2.2b/OSMBuildings-Leaflet.js"></script>
+
+                <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin="" />
+                <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin="" />
+
+                <!-- Location -->
+
+
+                <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
+                <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol@0.78.0/dist/L.Control.Locate.min.css" />
+                <!--Routing-->
+                <link href="//unpkg.com/leaflet@1.8.0/dist/leaflet.css" rel="stylesheet">
+                <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css" />
+                <link rel="stylesheet" href="css/styles.css">
+                <link rel="stylesheet" href="css/leaflet-measure.css">
+                <link rel="stylesheet" href="leaflet-routing-machine.css">
+                <link href="https://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" rel="stylesheet" />
+                <script src="https://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+
+
+
+
+                <style>
+                    html, body {
+                        height: 100%;
+                        margin: 0;
+                    }
+
+                    .leaflet-container {
+                        height: 400px;
+                        width: 600px;
+                        max-width: 100%;
+                        max-height: 100%;
+                    }
+
+                    .info {
+                        padding: 6px 8px;
+                        font: 14px/16px Arial, Helvetica, sans-serif;
+                        background: white;
+                        background: rgba(255, 255, 255, 0.8);
+                        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+                        border-radius: 5px;
+                    }
+
+                        .info h4 {
+                            margin: 0 0 5px;
+                            color: #777;
+                        }
+                </style>
+
+
+            </head>
+            <body>
+
+                <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+                <script src="Gare_maroc.geojson" type="text/javascript"></script>
+                <script src="cheminfr.geojson" type="text/javascript"></script>
+                <script src="decoupage.geojson" type="text/javascript"></script>
+                <script src="region.geojson" type="text/javascript"></script>
+                <script src="ligne.geojson" type="text/javascript"></script>
+                <script src="region.geojson" type="text/javascript"></script>
+                <script src="moisa.geojson" type="text/javascript"></script>
+                <script src="moisb.geojson" type="text/javascript"></script>
+                <script src="moisc.geojson" type="text/javascript"></script>
+                <script src="connectivity.geojson" type="text/javascript"></script>
+                <script src="env.geojson" type="text/javascript"></script>
+                <script src="density.geojson" type="text/javascript"></script>
+                <script src="DIVERISTY.geojson" type="text/javascript"></script>
+                <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"></script>
+                <script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
+                <script src="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol@0.78.0/dist/L.Control.Locate.min.js" charset="utf-8"></script>
+                <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+                <script src="https://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+
+
+                <div id="map" style="width: 1900px; height: 800px;"></div>
+
+                <script>
+
+                    //var map = L.map('map').setView([29.1887978572122, -9.119821863073248], 5);
+
+                    //const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    //maxZoom: 19,
+                    //attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+                    //}).addTo(map);
+
+
+
+
+                    /// Basemaps variables
+
+
+
+                    var osm = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                        maxZoom: 20,
+                        attribution: '<div class="attribution"> © OpenStreetMap </div>'
+                    });
+
+
+                    var satellite = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+                        maxZoom: 20,
+                        attribution: '<div class="attribution">Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community</div>'
+                    });
+
+                    var baseMaps = {
+
+                        'OpenStreetMap': osm,
+                        'satellite': satellite,
+                    };
+
+                    var map = L.map('map', {
+                        center: [34.0225084, -118.248208],
+                        zoom: 10,
+                        layers: osm
+                    });
+
+                    //trajet
+
+                    map.on('click', function (e) {
+                        var gotolat = e.latlng.lat
+                        var gotolng = e.latlng.lng
+                        map.locate().on("locationfound", (i) => {
+                            console.log(i.latlng)
+                            L.Routing.control({
+                                waypoints: [
+                                    L.latLng(i.latlng.lat, i.latlng.lng),
+                                    L.latLng(gotolat, gotolng)
+                                ]
+                            }).addTo(map)
+                        })
+                    });
+
+                    //Search places
+                    L.Control.geocoder().addTo(map);
+                    //scale
+                    L.control.scale().addTo(map);
+                    //location
+                    L.control.locate().addTo(map);
+
+
+                    //images from geoJSON
+
+                    var gare = L.geoJSON(gare).bindPopup(function (layer) {
+                        return (" <center> <img src='assets/imgs/" + layer.feature.properties.Image + "' style='width:200px;height:300x;border:2px solid #000000;'></center>" +
+                            + "<br>" + layer.feature.properties.Gare + "<br>" + layer.feature.properties.description)
+                    });
+
+                    //tarif pour 1mois
+
+                    var tarifa = L.geoJSON(moisa).bindPopup(function (layer) {
+                        return (" <center> <img src='assets/imgs/" + layer.feature.properties.Image + "' style='width:200px;height:300x;border:2px solid #000000;'></center>" +
+                            + "<br>" + layer.feature.properties.Gare + "<br>" + layer.feature.properties.moisa)
+                    });
+
+                    //tarif pour 3mois
+
+                    var tarifb = L.geoJSON(moisb).bindPopup(function (layer) {
+                        return (" <center> <img src='assets/imgs/" + layer.feature.properties.Image + "' style='width:200px;height:300x;border:2px solid #000000;'></center>" +
+                            + "<br>" + layer.feature.properties.Gare + "<br>" + layer.feature.properties.moisb)
+                    });
+
+                    //tarif pour 6mois
+
+                    var tarifc = L.geoJSON(moisc).bindPopup(function (layer) {
+                        return (" <center> <img src='assets/imgs/" + layer.feature.properties.Image + "' style='width:200px;height:300x;border:2px solid #000000;'></center>" +
+                            + "<br>" + layer.feature.properties.Gare + "<br>" + layer.feature.properties.moisc)
+                    });
+
+
+
+
+                    // Layers
+
+                    var cheminfr = L.geoJSON(cheminfr);
+                    var ligne = L.geoJSON(ligne);
+
+                    //Carte coroplète
+                    function getColor4(d) {
+                        return d >= -6.506540 && d < -2.438530 ? '#CC6666' :
+                            d >= -2.438530 && d < -0.033091 ? '#993333' :
+                            d >= -0.033091 && d < 2.182770 ? '#660000' :
+                            d >= 2.182770 && d < 5.638510 ? '#330000' :
+                            d >= 5.638510 && d <= 18.869600 ? '#FFCCCC' : // Adjusted the upper limit condition
+                            ''; // Default color if none of the conditions are met
+                    }
+
+                    function style4(feature) {
+                        return {
+                            weight: 0.5,
+                            opacity: 1,
+                            color: "white",
+                            dashArray: "3",
+                            fillOpacity: 0.9,
+                            fillColor: getColor4(feature.properties.walkab),
+                            originalStyle: {
+                                weight: 0.5,
+                            opacity: 1,
+                            color: "white",
+                            dashArray: "3",
+                            fillOpacity: 0.9,
+                            fillColor: getColor4(feature.properties.walkab)
+                            }
+                        };
+                    }
+
+                    var geojson3 = L.geoJson(env, {
+                        style: style4,
+                        onEachFeature: onEachFeature
+                    });
+
+            
+     //envirement
+                    //////////////////////////////////////////////////////////////////////
+
+                    function getColor2(d) {
+                        return d >= -0.49669 && d < 0.093099 ? '#fef0d9' :
+                            d >= 0.093099 && d < 1.218486 ? '#fdcc8a' :
+                            d >= 1.218486 && d < 3.410113 ? '#fc8d59' :
+                            d >= 3.410113 && d < 7.134927 ? '#e34a33' :
+                            d >= 7.134928 && d <= 15.606170 ? '#b30000' : // Adjusted the upper limit condition
+                            ''; // Default color if none of the conditions are met
+                    }
+
+                    function style2(feature) {
+                        return {
+                            weight: 0.5,
+                            opacity: 1,
+                            color: "white",
+                            dashArray: "3",
+                            fillOpacity: 0.9,
+                            fillColor: getColor2(feature.properties.INDICE_1),
+                            originalStyle: {
+                                weight: 0.5,
+                                opacity: 1,
+                                color: "white",
+                                dashArray: "3",
+                                fillOpacity: 0.9,
+                                fillColor: getColor2(feature.properties.INDICE_1)
+                            }
+                        };
+                    }
+
+                    var geojson1 = L.geoJson(env, {
+                        style: style2,
+                        onEachFeature: onEachFeature
+                    });
+                    
+                    ///////////////////////////////////////////////////////////////////////////
+         //proximity           
+                    //////////////////////////////////////////////////////////////////////
+
+                    function getColor3(d) {
+                        return d >= -1.510555 && d < -0.839551 ? '#CC6666' :
+                            d >= -0.839551 && d < -0.175385 ? '#993333' :
+                            d >= -0.175385 && d < 0.569688 ? '#660000' :
+                            d >= 0.569688 && d < 1.727389 ? '#330000' :
+                            d >= 1.727389 && d <= 4.194951 ? '#FFCCCC' : // Adjusted the upper limit condition
+                            ''; // Default color if none of the conditions are met
+                    }
+
+                    function style3(feature) {
+                        return {
+                            weight: 0.5,
+                            opacity: 1,
+                            color: "white",
+                            dashArray: "3",
+                            fillOpacity: 0.9,
+                            fillColor: getColor3(feature.properties.proximity),
+                            originalStyle: {
+                                weight: 0.5,
+                                opacity: 1,
+                                color: "white",
+                                dashArray: "3",
+                                fillOpacity: 0.9,
+                                fillColor: getColor2(feature.properties.proximity)
+                            }
+                        };
+                    }
+
+                    var geojson2 = L.geoJson(env, {
+                        style: style3,
+                        onEachFeature: onEachFeature
+                    });
+                    ///////////////////////////////////////////////////////////////////////////
+                    //walkab
+                    ///////////////////////////////////////////////////////////////////////////
+                    function getColor1(d) {
+                        return d >= -2.6389 && d < -1.067105 ? '#CC6666' :
+                            d >= -1.067105 && d < -0.103353 ? '#993333' :
+                            d >= -0.103353 && d < 0.827581 ? '#660000' :
+                            d >= 0.827581 && d < 3.439713 ? '#330000' :
+                            d >= 3.439713 && d <= 7.238352 ? '#FFCCCC' : // Adjusted the upper limit condition
+                            ''; // Default color if none of the conditions are met
+                    }
+
+                    function style(feature) {
+                        return {
+                            weight: 0.5,
+                            opacity: 1,
+                            color: "white",
+                            dashArray: "3",
+                            fillOpacity: 0.9,
+                            fillColor: getColor1(feature.properties.conv_noRrr),
+                            originalStyle: {
+                                weight: 0.5,
+                                opacity: 1,
+                                color: "white",
+                                dashArray: "3",
+                                fillOpacity: 0.9,
+                                fillColor: getColor1(feature.properties.conv_noRrr)
+                            }
+                        };
+                    }
+
+                    var geojson = L.geoJson(con, {
+                        style: style,
+                        onEachFeature: onEachFeature
+                    });
+
+
+
+
+
+
+
+
+
+                    ///////////////////////////////////////////////////////////////////////////
+                    //density
+                  ///////////////////////////////////////////////////////////////////////////
+                  function getColor5(d) {
+                    return d >= -1.878440 && d < 0.827209 ? '#CC6666' :
+                        d >= 0.827209  && d < 0.00274 ? '#993333' :
+                        d >= 0.00274 && d < 0.873684 ? '#660000' :
+                        d >= 0.873684 && d < 2.065959 ? '#330000' :
+                        d >= 2.065959 && d <= 4.237654 ? '#FFCCCC' : // Adjusted the upper limit condition
+                        ''; // Default color if none of the conditions are met
+                }
+
+                function style5(feature) {
+                    return {
+                        weight: 0.5,
+                        opacity: 1,
+                        color: "white",
+                        dashArray: "3",
+                        fillOpacity: 0.9,
+                        fillColor: getColor5(feature.properties.density_no),
+                        originalStyle: {
+                            weight: 0.5,
+                            opacity: 1,
+                            color: "white",
+                            dashArray: "3",
+                            fillOpacity: 0.9,
+                            fillColor: getColor5(feature.properties.density_no)
+                        }
+                    };
+                }
+
+                var geojson4 = L.geoJson(dens, {
+                    style: style5,
+                    onEachFeature: onEachFeature
+                });
+                 ///////////////////////////////////////////////////////////////////////////
+                    //diveristy
+                  ///////////////////////////////////////////////////////////////////////////
+                  function getColor6(d) {
+                    return d >= 0 && d < 0.229942 ? '#CC6666' :
+                        d >= 0.229942 && d < 0.387624 ? '#993333' :
+                        d >= 0.387625 && d < 0.514584 ? '#660000' :
+                        d >= 0.514584 && d < 0.633264 ? '#330000' :
+                        d >= 0.633264 && d <= 0.823808 ? '#FFCCCC' : // Adjusted the upper limit condition
+                        ''; // Default color if none of the conditions are met
+                }
+
+                function style6(feature) {
+                    return {
+                        weight: 0.5,
+                        opacity: 1,
+                        color: "white",
+                        dashArray: "3",
+                        fillOpacity: 0.9,
+                        fillColor: getColor6(feature.properties.entropy2),
+                        originalStyle: {
+                            weight: 0.5,
+                            opacity: 1,
+                            color: "white",
+                            dashArray: "3",
+                            fillOpacity: 0.9,
+                            fillColor: getColor6(feature.properties.entropy2)
+                        }
+                    };
+                }
+                var geojson5 = L.geoJson(diver, {
+                    style: style6,
+                    onEachFeature: onEachFeature
+                });
+                    ///////////////////////////////////////////////////////////////////////////
+
+                var geojson4 = L.geoJson(dens, {
+                    style: style5,
+                    onEachFeature: onEachFeature
+                });
+                function highlightFeature(e) {
+                    var layer = e.target;
+                
+                    // Save the original style
+                    layer.options.originalStyle = layer.options.originalStyle || layer.options.style;
+                
+                    layer.setStyle({
+                        weight: 5,
+                        color: "#666",
+                        dashArray: "",
+                        fillOpacity: 0.7
+                    });
+                
+                    layer.bringToFront();
+                    info.update(layer.feature.properties);
+                }
+
+                    function zoomToFeature(e) {
+                        map.fitBounds(e.target.getBounds());
+                    }
+
+
+
+
+                    function resetHighlight(e) {
+                        var layer = e.target;
+                        // Check if the originalStyle is defined before resetting
+                        if (layer.options.originalStyle) {
+                            layer.setStyle(layer.options.originalStyle);
+                        }
+                    
+                        info.update();
+                    }
+
+
+                    function onEachFeature(feature, layer) {
+                        layer.on({
+                            mouseover: highlightFeature,
+                            mouseout: resetHighlight,
+                            click: zoomToFeature
+                        });
+                    }
+
+                    var info = L.control();
+
+                    info.onAdd = function (map) {
+                        this._div = L.DomUtil.create("div", "info");
+                        this.update();
+                        return this._div;
+                    };
+
+                    // method that we will use to update the control based on feature properties passed
+                    info.update = function (props) {
+                        this._div.innerHTML =
+                            "<h4>walkability index </h4>" + (props ?
+                                "</b><br />" + " Indice de Diversity " +props.conv_noRrr+ "</b><br />" 
+                                : "Survoler une région");
+                    };
+
+                    info.addTo(map);
+
+
+                    var building = L.layerGroup();
+                    var B3D = L.tileLayer('https://api.mapbox.com/styles/v1/osmbuildings/cjt9gq35s09051fo7urho3m0f/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1Ijoib3NtYnVpbGRpbmdzIiwiYSI6IjNldU0tNDAifQ.c5EU_3V8b87xO24tuWil0w', {
+                        attribution: '© <a href="https://mapbox.com">Mapbox</a>',
+                        maxZoom: 60,
+                    }).addTo(building);
+                    var osmb = new OSMBuildings(building).load('http://{s}.data.osmbuildings.org/0.2/anonymous/tile/{z}/{x}/{y}.json');
+
+                    var Styly = {
+                        "color": "Grey",
+                        "opacity": 1,
+                        "weight": 1,
+                        "fillColor": "White"
+                    };
+
+
+
+
+
+                    layers = {
+                        "Walkcapapilities": geojson3,
+                        "Connectivityi": geojson,
+                        "envirement": geojson1,
+                        "Proximityt": geojson2,
+                        
+                        "density": geojson4,
+                        "diversity": geojson5,
+                        "ligne de la navette": ligne,
+                        "tarif pour un abonnement de 1mois": tarifa,
+                        "tarif pour un abonnement de 3mois": tarifb,
+                        "tarif pour un abonnement de 6mois": tarifc
+
+
+                    };
+
+                    var layerControl = L.control.layers(baseMaps, layers).addTo(map);
+
+
+
+
+
+
+
+                </script>
+
+            </body>
+        </html>
+
+
+
+
+
+
+    </div>
+    </div>
+    </div>
+</section>
+
+
+
+
+
+<!-- End OF Carte -->
+<!-- A propos de nous Section -->
+<section class="section" id="testmonial">
+    <div class="container">
+        <h6 class="section-title text-center mb-0">Ce Géoportail est réalisé par :</h6>
+        <div class="row">
+            <div class="col-md-4 my-3 my-md-0">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="media align-items-center mb-3">
+                            <img class="mr-3" src="assets/imgs/fati.jpeg" alt="">
+                            <div class="media-body">
+                                <h6 class="mt-1 mb-0">EL BoubeKri fatima-EZZAHRAE</h6>
+
+                            </div>
+                        </div>
+                        <p class="mb-0">Etudiante en 3ème année cycle Ingénieur en Sciences Géomatiques et Ingénierie Topographique</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 my-3 my-md-0">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="media align-items-center mb-3">
+                            <img class="mr-3" src="assets/imgs/hiba.jpg" alt="">
+                            <div class="media-body">
+                                <h6 class="mt-1 mb-0">Doi Hiba</h6>
+
+                            </div>
+                        </div>
+                        <p class="mb-0">Etudiant en 3ème année cycle Ingénieur en Sciences Géomatiques et Ingénierie Topographique</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 my-3 my-md-0">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="media align-items-center mb-3">
+                            <img class="mr-3" src="assets/imgs/assat.jpg" alt="">
+                            <div class="media-body">
+                                <h6 class="mt-1 mb-0">Assat Fatima</h6>
+
+                            </div>
+                        </div>
+                        <p class="mb-0">Etudiant en 3ème année cycle Ingénieur en Sciences Géomatiques et Ingénierie Topographique</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 my-3 my-md-0">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="media align-items-center mb-3">
+                            <img class="mr-3" src="assets/imgs/fatiha.jpeg" alt="">
+                            <div class="media-body">
+                                <h6 class="mt-1 mb-0">EL KADDOURI FATIHA </h6>
+
+                            </div>
+                        </div>
+                        <p class="mb-0">Etudiant en 3ème année cycle Ingénieur en Sciences Géomatiques et Ingénierie Topographique</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End of A propos de nous Section -->
+<!-- Contact Section -->
+<section id="contact" class="section has-img-bg pb-0">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-5 my-3">
+                
+
+                <h6 class="mb-0">Address</h6>
+                <p class="mb-4">IAV HASSAN II</p>
+
+                
+                <p></p>
+            </div>
+            <div class="col-md-7">
+                <form>
+                    <h4 class="mb-4">Contactez nous</h4>
+                    <div class="form-row">
+                        <div class="form-group col-sm-4">
+                            <input type="text" class="form-control text-white rounded-0 bg-transparent" name="name" placeholder="Name">
+                        </div>
+                        <div class="form-group col-sm-4">
+                            <input type="email" class="form-control text-white rounded-0 bg-transparent" name="Email" placeholder="Email">
+                        </div>
+                        <div class="form-group col-sm-4">
+                            <input type="text" class="form-control text-white rounded-0 bg-transparent" name="subject" placeholder="Subject">
+                        </div>
+                        <div class="form-group col-12">
+                            <textarea name="message" id="" cols="30" rows="4" class="form-control text-white rounded-0 bg-transparent" placeholder="Message"></textarea>
+
+                        </div>
+                        <div class="form-group col-12 mb-0">
+                            <button type="submit" class="btn btn-primary rounded w-md mt-3">Send</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- core  -->
+<script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+<script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+
+<!-- bootstrap 3 affix -->
+<script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+
+<!-- Isotope -->
+<script src="assets/vendors/isotope/isotope.pkgd.js"></script>
+
+
+
+</body>
+</html>
